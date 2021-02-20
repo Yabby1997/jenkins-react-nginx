@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          빌드가 잘 됩니다
+          배포중에도 잘 바뀌는지 테스트
         </p>
         <a
           className="App-link"
