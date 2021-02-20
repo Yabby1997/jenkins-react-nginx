@@ -13,6 +13,7 @@ pipeline {
         }
         stage("Deploy") {
             steps {
+                sh "ls /var/www"
                 dir("test"){
                     sh "cp -r build /var/www/build"
                 }
