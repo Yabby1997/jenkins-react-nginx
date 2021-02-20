@@ -13,10 +13,8 @@ pipeline {
         }
         stage("Deploy") {
             steps {
-                sh "cd /home/test"
+                sh "cd /home"
                 sh "ls"
-                sh "cd build"
-                sh "ls -la"
                 dir("test") {
                     sh "cp -r build /home/app/react/"
                 }
