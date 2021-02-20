@@ -16,7 +16,7 @@ pipeline {
                 dir("test") {
                     sh "pwd"
                     sh "ls"
-                    sh "cp -r build /home/app/react/build"
+                    sh "cp -r build /home/app/react/"
                 }
             }
         }
