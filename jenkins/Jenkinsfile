@@ -13,9 +13,11 @@ pipeline {
         }
         stage("Deploy") {
             steps {
-                sh "pwd"
-                sh "ls"
-                sh "cp -r build /home/app/react/build"
+                dir("test") {
+                    sh "pwd"
+                    sh "ls"
+                    sh "cp -r build /home/app/react/build"
+                }
             }
         }
     }
