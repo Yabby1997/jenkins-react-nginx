@@ -14,7 +14,7 @@ pipeline {
         stage("Deploy") {
             steps {
                 dir("test") {
-                    sh "cp -r ./build/ /home/app/react"
+                    sh "cp -r ./build /home/app/react"
                 }
             }
         }
