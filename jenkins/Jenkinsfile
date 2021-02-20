@@ -13,7 +13,7 @@ pipeline {
         }
         stage("Deploy") {
             steps {
-                sh "sudo cp -r ${WORKSPACE}/build/ /home/app/react/build"
+                sh "cp -r ${WORKSPACE}/build/ /home/app/react/build"
             }
         }
     }
