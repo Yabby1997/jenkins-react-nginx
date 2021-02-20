@@ -13,7 +13,9 @@ pipeline {
         }
         stage("Deploy") {
             steps {
-                sh "cp -r ${WORKSPACE}/build/ /var/www/build"
+                dir("test"){
+                    sh "cp -r build /var/www/build"
+                }
             }
         }
     }
