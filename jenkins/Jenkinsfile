@@ -14,6 +14,7 @@ pipeline {
         stage("Deploy") {
             steps {
                 dir("test"){
+                    sh "rm -r /home/build"
                     sh "cp -r build /home/build"
                 }
             }
