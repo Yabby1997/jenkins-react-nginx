@@ -15,7 +15,7 @@ pipeline {
             steps {
                 sh "cd /home/test"
                 sh "ls"
-                sh "cd build
+                sh "cd build"
                 sh "ls -la"
                 dir("test") {
                     sh "cp -r build /home/app/react/"
