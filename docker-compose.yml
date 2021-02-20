@@ -1,10 +1,18 @@
 version: '3'
 
 services:
+  jenkins:
+    image: jenkins/jenkins:latest
+    ports:
+      - 8090:8080
+    volumes:
+      - ./jenkins:/home/app/jenkins/jenkinsfile
+      - ./test/build:/home/app/react/build
+
   nginx:
     image: nginx:latest
     ports:
       - 882:80
     volumes:
-      - ./conf:/etc/nginx/conf.d
+      - ./nginx:/etc/nginx/conf.d
       - ./test/build:/var/www/build
