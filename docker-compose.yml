@@ -6,7 +6,6 @@ services:
     ports:
       - 8090:8080
     volumes:
-      - ./jenkins:/home/app/jenkins/jenkinsfile
       - ./test/build:/home/app/react/build
 
   nginx:
