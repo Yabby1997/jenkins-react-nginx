@@ -13,11 +13,7 @@ pipeline {
         }
         stage("Deploy") {
             steps {
-                sh "cd /home"
-                sh "ls"
-                dir("test") {
-                    sh "cp -r build /home/app/react/"
-                }
+                sh "cp -r ${WORKSPACE}/build/ /var/www/build"
             }
         }
     }

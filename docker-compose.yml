@@ -6,7 +6,7 @@ services:
     ports:
       - 8090:8080
     volumes:
-      - ./test/:/home/app/react/
+      - ./test/build:/var/www/build/
 
   nginx:
     image: nginx:latest
