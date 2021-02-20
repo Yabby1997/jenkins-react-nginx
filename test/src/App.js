@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hello World!!!
+          빌드가 잘 됩니다
         </p>
         <a
           className="App-link"
