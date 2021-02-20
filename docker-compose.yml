@@ -5,3 +5,6 @@ services:
     image: nginx:latest
     ports:
       - 882:80
+    volumes:
+      - ./conf:/etc/nginx/conf.d
+      - ./test/build:/var/www/build
